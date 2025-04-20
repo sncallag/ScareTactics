@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1901e7ac6f27b04688073f68ea51a54, type: 3}
+  m_Name: QuestNPC
+  m_EditorClassIdentifier: 
+  dialoglines:
+  - lineText: 'Welcome to the Afterlife, kid. This is where all us ghosts come to
+      get the job done '
+    isConditional: 0
+    conditionKey: 
+    playerResponses: []
+    npcReactions: []
+    action:
+      m_PersistentCalls:
+        m_Calls: []
+  - lineText: "You see, we don't just hang around scaring people for fun. No, no,
+      no. We\u2019ve got a goal: XP, baby! You haunt the living, get that sweet,
+      spooky experience, and level up."
+    isConditional: 0
+    conditionKey: 
+    playerResponses: []
+    npcReactions: []
+    action:
+      m_PersistentCalls:
+        m_Calls: []
+  - lineText: 'Each time you make someone jump, spill their coffee, or get a good
+      scare, you earn XP. The more you level up, the more tricks you can learn. '
+    isConditional: 0
+    conditionKey: 
+    playerResponses: []
+    npcReactions: []
+    action:
+      m_PersistentCalls:
+        m_Calls: []
+  - lineText: "Want to possess objects? Maybe scare 'em with a spooky laugh? The
+      sky\u2019s the limit... or should I say, the haunting zone? "
+    isConditional: 0
+    conditionKey: 
+    playerResponses: []
+    npcReactions: []
+    action:
+      m_PersistentCalls:
+        m_Calls: []
+  - lineText: "Your first target's just over there, try throwing something at them
+      it\u2019ll be sure to give them a fright!  "
+    isConditional: 0
+    conditionKey: 
+    playerResponses: []
+    npcReactions: []
+    action:
+      m_PersistentCalls:
+        m_Calls: []
+  - lineText: "Nicely done, you're a natural! But this is just the start, head out
+      there, haunt as many folks as you can, and come back when you\u2019re Level
+      3. I\u2019ve got some advanced tricks waiting for you once you\u2019re ready.
+      Now go spread some spooky cheer!"
+    isConditional: 1
+    conditionKey: LevelUp
+    playerResponses: []
+    npcReactions: []
+    action:
+      m_PersistentCalls:
+        m_Calls: []
+  - lineText: "You\u2019ve got talent, no doubt about it! Come see me tonight, and
+      I\u2019ll show you how to crank up the scares to the next level!"
+    isConditional: 1
+    conditionKey: Level3
+    playerResponses: []
+    npcReactions: []
+    action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4763989239074271842, guid: 3dccbfa69bcbe0047a05d03b9fa8cf99, type: 3}
+          m_TargetAssemblyTypeName: EndGameEvent, Assembly-CSharp
+          m_MethodName: TriggerEndGame
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
