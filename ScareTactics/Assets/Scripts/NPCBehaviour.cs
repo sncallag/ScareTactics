@@ -38,10 +38,10 @@ public class NPCBehavior : MonoBehaviour
             PlayerStats player = FindObjectOfType<PlayerStats>();
             if (player != null)
             {
-                player.GainXP(10); // Adjust value to balance your game
+                player.GainXP(10); 
             }
 
-            Destroy(other.GetComponent<ThrownItem>()); // Prevent retrigger
+            Destroy(other.GetComponent<ThrownItem>());
         }
 
     }
